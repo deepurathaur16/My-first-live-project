@@ -1,15 +1,92 @@
-<html>
-  <head>
-    <title>rev.</title>
-  </head>
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Header + Nav + Footer</title>
   <style>
-    h1{
-      margin:20px;
-      padding:20px;
-      color:red;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
+
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 { margin-bottom: 5px; }
+
+    nav {
+      background: #1e293b;
+      padding: 12px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 90%;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+    }
+    footer p { font-size: 14px; }
   </style>
-  <body>
-    <h1>My name is pankaj</h1>
-  </body>
+</head>
+<body>
+
+  <header >
+    <h1>My Tech Blog</h1>
+    <p>Web Development Sikho</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tutorials</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Welcome!</h2>
+    <p>Yeh page ka main content area hai. Yahan aap apna asli content likhte hain.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Tech Blog. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
